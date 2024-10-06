@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Borjas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Nav -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #6a4e3f;">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="imagenes/logo_oficial-removebg-preview.png" alt="Café Borjas Logo" style="height: 50px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li> 
+                <li class="nav-item"><a class="nav-link" href="#mapa">Ubicación</a></li> 
+                <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Pane -->
+    <section class="hero">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/grano.jpg" class="d-block w-100" alt="café">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/taza.jpg" class="d-block w-100" alt="café en una taza">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/taza con granos.jpg" class="d-block w-100" alt="taza con granos de café">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+
+   <!-- Sección de productos -->
+<section id="productos" class="productos py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Nuestros Productos</h2>
+        <p class="text-center mb-5">Descubre nuestra selección de cafés y productos relacionados.</p>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagenes cafes/Café Espresso.jpg" class="card-img-top product-img" alt="Café Espresso">
+                    <div class="card-body">
+                        <h3 class="card-title">Café Espresso</h3>
+                        <p class="card-text">Precio: Lps 150</p>
+                        <p class="card-text">Disfruta de la intensidad del Café Espresso, una mezcla rica y concentrada que despierta tus sentidos. Perfecto para esos momentos en los que necesitas un impulso de energía.</p>
+                        <button class="btn btn-primary">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagenes cafes/Café Americano.jpeg" class="card-img-top product-img" alt="Café Americano">
+                    <div class="card-body">
+                        <h3 class="card-title">Café Americano</h3>
+                        <p class="card-text">Precio: Lps 120</p>
+                        <p class="card-text">El Café Americano es una opción suave y equilibrada, ideal para aquellos que prefieren un café más ligero pero lleno de sabor. Perfecto para disfrutar a cualquier hora del día.</p>
+                        <button class="btn btn-primary">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagenes cafes/Capuchino.jpg" class="card-img-top product-img" alt="Capuchino">
+                    <div class="card-body">
+                        <h3 class="card-title">Capuchino</h3>
+                        <p class="card-text">Precio: Lps 180</p>
+                        <p class="card-text">Deléitate con nuestro Capuchino, que combina la riqueza del espresso con una suave y cremosa leche espumada, coronado con un toque de cacao. ¡El equilibrio perfecto entre el café y la dulzura!</p>
+                        <button class="btn btn-primary">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagenes cafes/Café Mocha.jpg" class="card-img-top product-img" alt="Café Mocha">
+                    <div class="card-body">
+                        <h3 class="card-title">Café Mocha</h3>
+                        <p class="card-text">Precio: Lps 200</p>
+                        <p class="card-text">El Café Mocha es un deleite para los amantes del chocolate y el café. Con su sabor rico y cremoso, es el acompañante perfecto para un momento de indulgencia.</p>
+                        <button class="btn btn-primary">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagenes cafes/Frappuccino.jpg" class="card-img-top product-img" alt="Frappuccino">
+                    <div class="card-body">
+                        <h3 class="card-title">Frappuccino</h3>
+                        <p class="card-text">Precio: Lps 220</p>
+                        <p class="card-text">Refresca tu día con nuestro Frappuccino, una mezcla deliciosa de café, leche y hielo. Ideal para disfrutar en un día caluroso o como un capricho en cualquier momento.</p>
+                        <button class="btn btn-primary">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagenes cafes/cafe cortado.png" class="card-img-top product-img" alt="Café Cortado">
+                    <div class="card-body">
+                        <h3 class="card-title">Café Cortado</h3>
+                        <p class="card-text">Precio: Lps 140</p>
+                        <p class="card-text">El Café Cortado es una fusión perfecta de espresso y un toque de leche, creando una bebida balanceada que resalta el sabor del café sin ser abrumador.</p>
+                        <button class="btn btn-primary">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagenes cafes/Café Descafeinado.jpg" class="card-img-top product-img" alt="Café Descafeinado">
+                    <div class="card-body">
+                        <h3 class="card-title">Café Descafeinado</h3>
+                        <p class="card-text">Precio: Lps 160</p>
+                        <p class="card-text">Para aquellos que buscan disfrutar del sabor del café sin la cafeína, nuestro Café Descafeinado es la elección perfecta. Saboroso y suave, ideal para cualquier momento del día.</p>
+                        <button class="btn btn-primary">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagenes cafes/Café Arábica_.jpg" class="card-img-top product-img" alt="Café Arábica">
+                    <div class="card-body">
+                        <h3 class="card-title">Café Arábica</h3>
+                        <p class="card-text">Precio: Lps 175</p>
+                        <p class="card-text">Descubre la suavidad y los matices del Café Arábica, conocido por su aroma floral y su sabor delicado. Un café premium que deleitará tu paladar.</p>
+                        <button class="btn btn-primary">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagenes cafes/Café Robusta.jpg" class="card-img-top product-img" alt="Café Robusta">
+                    <div class="card-body">
+                        <h3 class="card-title">Café Robusta</h3>
+                        <p class="card-text">Precio: Lps 155</p>
+                        <p class="card-text">El Café Robusta es ideal para quienes prefieren un sabor fuerte y terroso. Con más cafeína que el Arábica, es perfecto para esos momentos en los que necesitas un extra de energía.</p>
+                        <button class="btn btn-primary">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagenes cafes/Café Orgánico.jpg" class="card-img-top product-img" alt="Café Orgánico">
+                    <div class="card-body">
+                        <h3 class="card-title">Café Orgánico</h3>
+                        <p class="card-text">Precio: Lps 190</p>
+                        <p class="card-text">Disfruta de la pureza del Café Orgánico, cultivado sin pesticidas ni químicos. Un sabor auténtico y natural que respeta el medio ambiente y tu salud.</p>
+                        <button class="btn btn-primary">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagenes cafes/Café en Grano.jpg" class="card-img-top product-img" alt="Café en Grano">
+                    <div class="card-body">
+                        <h3 class="card-title">Café en Grano</h3>
+                        <p class="card-text">Precio: Lps 250</p>
+                        <p class="card-text">Experimenta la frescura del Café en Grano. Molido al momento para liberar su aroma y sabor, es la opción perfecta para los verdaderos amantes del café.</p>
+                        <button class="btn btn-primary">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="imagenes cafes/Café de Especialidadjpg.jpg" class="card-img-top product-img" alt="Café de Especialidad">
+                    <div class="card-body">
+                        <h3 class="card-title">Café de Especialidad</h3>
+                        <p class="card-text">Precio: Lps 300</p>
+                        <p class="card-text">Para los conocedores del café, nuestro Café de Especialidad ofrece una experiencia única con granos seleccionados a mano. Perfecto para disfrutar en cualquier ocasión especial.</p>
+                        <button class="btn btn-primary">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Mapa de ubicación -->
+    <section id="mapa" class="mapa py-5">
+        <div class="container text-center">
+            <h2>Encuéntranos aquí</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31675.42735671374!2d-87.19213593373475!3d14.085849648449465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6fbd72d7d9cfab%3A0xa09df8fd74c5a768!2sTegucigalpa!5e0!3m2!1ses!2shn!4v1696582656739!5m2!1ses!2shn" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </section>
+
+    <!-- Sección de FAQ -->
+    <section id="faq" class="faq py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Preguntas Frecuentes</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            ¿Qué tipos de café ofrecen?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Ofrecemos una variedad de cafés como espresso, americano, capuchino, entre otros.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            ¿Dónde están ubicados?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Nos encontramos en el corazón de Tegucigalpa, cerca de las principales oficinas y centros comerciales.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            ¿Tienen opciones sin cafeína?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Sí, ofrecemos café descafeinado y opciones de infusiones para quienes prefieren evitar la cafeína.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón para volver arriba -->
+    <a href="#" class="btn btn-primary btn-lg" style="position: fixed; bottom: 20px; right: 20px;">Volver arriba</a>
+
+    <!-- Footer -->
+<footer class="text-center text-white">
+    <div class="container p-4">
+        <section class="mb-4">
+            <h4>Síguenos en nuestras redes sociales</h4>
+            <a href="https://www.facebook.com/" target="_blank" class="btn btn-outline-light btn-floating m-1" role="button">
+                <img src="imagenes/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="btn btn-outline-light btn-floating m-1" role="button">
+                <img src="imagenes/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://x.com/" target="_blank" class="btn btn-outline-light btn-floating m-1" role="button">
+                <img src="imagenes/twitter.png" alt="Twitter">
+            </a>
+        </section>
+        <section class="mb-4">
+            <p>Con más de 50 años ofreciendo el mejor café en el corazón de Tegucigalpa, somos tu lugar de encuentro favorito.</p>
+        </section>
+        <div class="text-center p-3">
+            &copy; 2024 Café Borjas. Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+
+</html>
